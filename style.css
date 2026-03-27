@@ -22,17 +22,31 @@ body {
 }
 
 .header {
-  background: url(https://i.pinimg.com/avif/1200x/2f/aa/68/2faa684c8d7695b2a19c403dea30ae55.avf)
-    no-repeat center center;
-  background-size: cover;
+  position: relative;
+  background: none;
   min-height: 800px;
   display: flex;
   align-items: center;
   text-align: center;
+  overflow: hidden;
+}
+
+.header::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url(https://i.pinimg.com/avif/1200x/2f/aa/68/2faa684c8d7695b2a19c403dea30ae55.avf)
+    no-repeat center center / cover;
+  z-index: 0;
+  transition:
+    filter 0.8s,
+    transform 0.8s;
 }
 
 .header .container {
   width: 100%;
+  position: relative;
+  z-index: 1;
   text-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
 
@@ -189,5 +203,9 @@ a[href*="volunteer"]:hover {
   .header p {
     font-weight: 500;
     font-size: 30px;
+  }
+  .header::before {
+    filter: blur(6px);
+    transform: scale(1.05);
   }
 }
