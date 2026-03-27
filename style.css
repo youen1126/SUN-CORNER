@@ -33,14 +33,14 @@ body {
 
 .header .container {
   width: 100%;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
 
 .header h1 {
   color: #fff;
-  font-size: 80px;
+  font-size: 100px;
   line-height: 1.2;
   margin: 0 0 40px;
-  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
 
 .header p {
@@ -57,7 +57,8 @@ body {
 
 .en-title {
   color: #fff;
-  font-size: 30px;
+  font-size: 70px;
+  padding-bottom: 20px;
   text-transform: uppercase;
 }
 
@@ -158,8 +159,14 @@ a[href*="volunteer"]:hover {
 
 @media (max-width: 575px) {
   .header h1 {
-    font-size: 50px;
+    font-size: 80px;
     line-height: 64px;
+  }
+  .header p {
+    font-size: 15px;
+  }
+  .en-title {
+    font-size: 50px;
   }
 
   .main,
@@ -172,15 +179,15 @@ a[href*="volunteer"]:hover {
   }
 }
 
-@media (min-width: 1050px) {
+@media (min-width: 1500px) {
   .header h1 {
-    font-size: 120px;
+    font-size: 170px;
   }
   .en-title {
-    font-size: 50px;
+    font-size: 100px;
   }
   .header p {
     font-weight: 500;
-    font-size: 20px;
+    font-size: 30px;
   }
 }
