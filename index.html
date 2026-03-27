@@ -1,26 +1,34 @@
 <!doctype html>
-<html lang="en">
+<html lang="zh-Hant-TW">
   <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="日角工作室是一個結合創作靈感、色彩選物與工作室日常的品牌網站。"
+    />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css?family=Roboto:400,300,500,100"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap"
       rel="stylesheet"
-      type="text/css"
     />
     <title>日角工作室</title>
     <link href="style.css" rel="stylesheet" />
   </head>
   <body>
     <!-- Hero -->
-    <div class="header">
+    <header class="header">
       <div class="container">
         <h1>日角工作室</h1>
-        <h1>SUN CORNER</h1>
+        <p class="en-title">SUN CORNER</p>
         <p>把靈感、色彩與日常收進每一次創作裡。</p>
-        <a class="btn" href="#">開始逛逛</a>
+        <a class="btn" href="#inspiration">開始逛逛</a>
       </div>
-    </div>
+    </header>
     <!-- navbar -->
-    <div class="nav">
+    <nav class="nav">
       <div class="container">
         <ul>
           <li>Home</li>
@@ -30,49 +38,53 @@
           <li>關於日角</li>
         </ul>
       </div>
-    </div>
+    </nav>
     <!-- section2 -->
-    <div class="main">
-      <div class="container">
-        <img
-          src="https://i.pinimg.com/1200x/d8/6c/5c/d86c5c14edd8119a1a2ec39290673a80.jpg"
-          alt="本週靈感企劃配圖"
-          height="228"
-        />
-        <h2>本週靈感企劃 / 編輯推薦</h2>
-        <p>把黃色留在桌上</p>
-        <p>
-          明亮的黃色不只是視覺焦點，也像一種提醒：
-          創作可以自由、可以好玩，也可以很生活。
-        </p>
-        <p>
-          這週我們挑了幾樣適合搭配暖色桌面的筆記工具、收納小物與配色靈感，
-          陪你把平凡的一天，整理成更想開始的樣子。
-        </p>
-      </div>
-    </div>
-    <!-- section3 -->
-    <div class="event">
-      <div class="container">
-        <h2>一起把靈感現場變成真的</h2>
-        <p>
-          我們不定期舉辦創作市集、手作體驗、小型展覽與品牌企劃活動，
-          正在尋找喜歡整理、喜歡美感、也喜歡和人一起完成事情的志工夥伴。
-          如果你想走進工作室的日常，參與活動現場、認識創作者與觀眾，
-          歡迎加入我們，一起把靈感搬進真實生活裡。
-        </p>
-        <a
-          class="btn"
-          href="https://youthvolunteer.yda.gov.tw/content/m_volunteer_service_content.php?sid=1239"
-          >查看志工招募</a
-        >
-      </div>
-    </div>
+    <main>
+      <section id="inspiration" class="main">
+        <div class="container">
+          <img
+            src="https://i.pinimg.com/1200x/d8/6c/5c/d86c5c14edd8119a1a2ec39290673a80.jpg"
+            alt="本週靈感企劃配圖"
+          />
+          <h2>本週靈感企劃 / 編輯推薦</h2>
+          <h3>把黃色留在桌上</h3>
+          <p>
+            明亮的黃色不只是視覺焦點，也像一種提醒：
+            創作可以自由、可以好玩，也可以很生活。
+          </p>
+          <p>
+            這週我們挑了幾樣適合搭配暖色桌面的筆記工具、收納小物與配色靈感，
+            陪你把平凡的一天，整理成更想開始的樣子。
+          </p>
+        </div>
+      </section>
+
+      <section class="event">
+        <div class="container">
+          <h2>一起把靈感現場變成真的</h2>
+          <p>
+            我們不定期舉辦創作市集、手作體驗、小型展覽與品牌企劃活動，
+            正在尋找喜歡整理、喜歡美感、也喜歡和人一起完成事情的志工夥伴。
+            如果你想走進工作室的日常，參與活動現場、認識創作者與觀眾，
+            歡迎加入我們，一起把靈感搬進真實生活裡。
+          </p>
+          <a
+            class="btn"
+            href="https://youthvolunteer.yda.gov.tw/content/m_volunteer_service_content.php?sid=1239"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            查看志工招募
+          </a>
+        </div>
+      </section>
+    </main>
     <!-- footer -->
-    <div class="footer">
+    <footer class="footer">
       <div class="container">
-        <p>&copy; 2026 日光製造所. All rights reserved.</p>
+        <p>&copy; 2026 日角工作室 SUN CORNER. All rights reserved.</p>
       </div>
-    </div>
+    </footer>
   </body>
 </html>
