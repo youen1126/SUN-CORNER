@@ -129,14 +129,15 @@ body {
   background:
     linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
     url(https://i.pinimg.com/1200x/da/7d/d5/da7dd514be3bfaa8e79833aac24d5f0c.jpg)
-      center center / cover no-repeat;
-  min-height: 600px;
-  display: flex;
+      no-repeat center center / cover;
+  min-height: 400px;
+  /* display: flex; */
   align-items: center;
 }
 
 .event .container {
   width: 100%;
+  padding: 50px 20px;
   text-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
 }
 
@@ -202,13 +203,12 @@ html {
     font-size: 80px;
     line-height: 64px;
   }
-  .header p {
-    font-size: 15px;
-  }
   .en-title {
     font-size: 50px;
   }
-
+  .header p {
+    font-size: 15px;
+  }
   .main {
     padding: 0 30px;
   }
@@ -228,5 +228,9 @@ html {
   .header::before {
     filter: blur(6px);
     transform: scale(1.05);
+  }
+  .event {
+    min-height: 400px;
+    width: 100%;
   }
 }
