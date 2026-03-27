@@ -112,17 +112,17 @@ body {
   cursor: pointer;
 }
 
-.main .container {
+.inspirat .container {
   margin: 80px auto;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 40px;
 }
 
-.main img {
-  width: 100%;
-  max-width: 430px;
-  height: auto;
+.inspirat img {
+  height: 200px;
   display: block;
-  float: left;
-  padding-right: 50px;
 }
 
 .event {
@@ -131,29 +131,26 @@ body {
     url(https://i.pinimg.com/1200x/da/7d/d5/da7dd514be3bfaa8e79833aac24d5f0c.jpg)
       no-repeat center center / cover;
   min-height: 400px;
-  /* display: flex; */
+  display: flex;
   align-items: center;
 }
 
 .event .container {
   width: 100%;
-  padding: 50px 20px;
   text-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+  text-align: right;
 }
 
 .event h2 {
   color: #fff;
-  text-align: right;
 }
 
 .event p {
   color: #fff;
-  text-align: right;
 }
 
 .event .btn {
   margin: 10px 0 0;
-  float: right;
 }
 
 a[href*="volunteer"]:hover {
@@ -209,8 +206,16 @@ html {
   .header p {
     font-size: 15px;
   }
-  .main {
-    padding: 0 30px;
+  .inspirat {
+    padding: 0 30px 0 30px;
+  }
+  .inspirat .container {
+    margin: 80px auto;
+    display: flex;
+    flex-direction: column;
+  }
+  .inspirat img {
+    height: 300px;
   }
 }
 
@@ -228,6 +233,9 @@ html {
   .header::before {
     filter: blur(6px);
     transform: scale(1.05);
+  }
+  .inspirat {
+    padding: 0 30px 0 30px;
   }
   .event {
     min-height: 400px;
