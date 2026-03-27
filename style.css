@@ -158,6 +158,55 @@ a[href*="volunteer"]:hover {
   background: #000;
 }
 
+.hotspot-card .container {
+  display: flex;
+  padding: 50px 10px;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.hotspot-card .col {
+  padding: 20px 20px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 4px #c0c0c0;
+  display: flex;
+  flex-direction: column;
+}
+
+.hotspot-card .col .photo {
+  background-color: #d9d2bf;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.hotspot-card .col .photo img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+.hotspot-card .col .con {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.hotspot-card .col .con .btns {
+  color: #3f5d45;
+  font-size: 18px;
+  text-align: right;
+}
+
+.hotspot-card .col .con h3 {
+  color: #3f5d45;
+  font-size: 25px;
+}
+.hotspot-card .col .con p {
+  color: #29392c;
+  font-size: 12px;
+}
+
 .footer {
   background: #fcc500;
   padding: 40px 0;
@@ -217,6 +266,24 @@ html {
   .inspirat img {
     height: 300px;
   }
+  .hotspot-card .container {
+    gap: 10px;
+  }
+  .hotspot-card .col {
+    box-shadow: 1px 1px 4px #c0c0c0;
+  }
+  .hotspot-card .col .photo {
+    font-size: 100px;
+  }
+  .hotspot-card .col .con h3 {
+    font-size: 15px;
+  }
+  .hotspot-card .col .con p {
+    font-size: 10px;
+  }
+  .hotspot-card .col .con .btns {
+    font-size: 14px;
+  }
 }
 
 @media (min-width: 1500px) {
@@ -240,5 +307,20 @@ html {
   .event {
     min-height: 400px;
     width: 100%;
+  }
+  .hotspot-card .container {
+    gap: 60px;
+  }
+  .hotspot-card .col {
+    box-shadow: 1px 1px 9px #c0c0c0;
+  }
+  .hotspot-card .col .photo {
+    font-size: 200px;
+  }
+  .hotspot-card .col .con h3 {
+    font-size: 30px;
+  }
+  .hotspot-card .col .con p {
+    font-size: 15px;
   }
 }
