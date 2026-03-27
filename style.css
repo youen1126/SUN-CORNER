@@ -157,24 +157,38 @@ a[href*="volunteer"]:hover {
   color: #fcc500;
   background: #000;
 }
-
-.hotspot-card .container {
-  display: flex;
-  padding: 50px 10px;
-  justify-content: space-between;
-  gap: 15px;
-}
-
-.hotspot-card .col {
-  padding: 20px 20px;
-  border-radius: 10px;
-  box-shadow: 1px 1px 4px #c0c0c0;
+.hotspot-card {
+  background-color: #d9d2bf;
   display: flex;
   flex-direction: column;
 }
 
+.hotspot-card .hotspot-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hotspot-card .container {
+  display: flex;
+  padding: 30px 10px 50px 10px;
+  margin-bottom: 20px;
+  justify-content: center;
+  gap: 20px;
+}
+
+.hotspot-card .col {
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 4px #c0c0c0;
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 300px;
+  background-color: #fff;
+}
+
 .hotspot-card .col .photo {
-  background-color: #d9d2bf;
+  background-color: #9f9988;
   border-radius: 10px;
   display: flex;
   align-items: center;
@@ -182,29 +196,36 @@ a[href*="volunteer"]:hover {
   overflow: hidden;
 }
 .hotspot-card .col .photo img {
-  max-width: 100%;
-  height: auto;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
   display: block;
 }
 .hotspot-card .col .con {
   background-color: #fff;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  gap: 12px;
+  flex: 1;
+  padding-top: 16px;
 }
 .hotspot-card .col .con .btns {
   color: #3f5d45;
   font-size: 18px;
   text-align: right;
+  margin-top: auto;
 }
 
 .hotspot-card .col .con h3 {
   color: #3f5d45;
-  font-size: 25px;
+  padding-bottom: 10px;
+  margin: 0;
 }
 .hotspot-card .col .con p {
   color: #29392c;
-  font-size: 12px;
+  font-size: 14px;
+  line-height: 1.6;
+  margin: 0;
 }
 
 .footer {
@@ -268,21 +289,11 @@ html {
   }
   .hotspot-card .container {
     gap: 10px;
-  }
-  .hotspot-card .col {
-    box-shadow: 1px 1px 4px #c0c0c0;
+    flex-wrap: wrap;
   }
   .hotspot-card .col .photo {
-    font-size: 100px;
-  }
-  .hotspot-card .col .con h3 {
-    font-size: 15px;
-  }
-  .hotspot-card .col .con p {
-    font-size: 10px;
-  }
-  .hotspot-card .col .con .btns {
-    font-size: 14px;
+    border-radius: 7px;
+    height: 350px;
   }
 }
 
@@ -307,15 +318,6 @@ html {
   .event {
     min-height: 400px;
     width: 100%;
-  }
-  .hotspot-card .container {
-    gap: 60px;
-  }
-  .hotspot-card .col {
-    box-shadow: 1px 1px 9px #c0c0c0;
-  }
-  .hotspot-card .col .photo {
-    font-size: 200px;
   }
   .hotspot-card .col .con h3 {
     font-size: 30px;
