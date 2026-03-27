@@ -3,3 +3,186 @@ body {
   margin: 0;
   padding: 0;
 }
+
+* {
+  font-family: Verdana;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 940px;
+  padding: 0 10px;
+}
+
+.header {
+  background: url(https://i.pinimg.com/avif/1200x/2f/aa/68/2faa684c8d7695b2a19c403dea30ae55.avf)
+    no-repeat center center;
+  background-size: cover;
+  min-height: 800px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.header .container {
+  width: 100%;
+}
+
+.header h1 {
+  color: #fff;
+  font-size: 80px;
+  line-height: 1.2;
+  margin: 0 0 40px;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.header p {
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: 8px;
+  margin-bottom: 40px;
+  margin-top: 0;
+}
+
+.article-title {
+  font-family: cursive;
+}
+
+.en-title {
+  color: #fff;
+  font-size: 30px;
+  text-transform: uppercase;
+}
+
+.btn {
+  color: #fff;
+  background: #000;
+  padding: 10px 40px;
+  text-decoration: none;
+  transition: background 0.5s;
+}
+
+.nav {
+  background: #000;
+  height: 80px;
+  width: 100%;
+}
+
+.nav ul {
+  height: 80px;
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.nav ul li {
+  color: #fff;
+  display: inline-block;
+  height: 80px;
+  line-height: 80px;
+  list-style: none;
+  padding: 0 10px;
+  transition: background 0.5s;
+}
+
+.btn:hover,
+.nav ul li:hover {
+  background: #11dbff;
+  cursor: pointer;
+  transition: background 0.5s;
+}
+
+.main .container {
+  margin: 80px auto;
+}
+
+.main img {
+  width: 100%;
+  max-width: 340px;
+  height: auto;
+  display: block;
+  float: left;
+  padding-right: 50px;
+}
+
+.event {
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(https://i.pinimg.com/1200x/da/7d/d5/da7dd514be3bfaa8e79833aac24d5f0c.jpg)
+      center center / cover no-repeat;
+  height: 600px;
+}
+
+.event .container {
+  position: relative;
+  top: 220px;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+.event h2 {
+  color: #fff;
+  text-align: right;
+}
+
+.event p {
+  color: #fff;
+  text-align: right;
+}
+
+.event .btn {
+  margin: 10px 0 0;
+  float: right;
+}
+
+a[href*="volunteer"]:hover {
+  color: #fcc500;
+  background: #000;
+}
+
+.footer {
+  background: #fcc500;
+  height: 80px;
+  padding-bottom: 50px;
+}
+
+.footer p {
+  color: #000;
+  font-size: 14px;
+  height: 80px;
+  line-height: 80px;
+  margin: 0;
+}
+
+@media (max-width: 500px) {
+  .header h1 {
+    font-size: 50px;
+    line-height: 64px;
+  }
+
+  .main,
+  .event {
+    padding: 0 30px;
+  }
+
+  .main img {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1050px) {
+  .header h1 {
+    font-size: 120px;
+  }
+  .en-title {
+    font-size: 50px;
+  }
+  .header p {
+    font-weight: 500;
+    font-size: 20px;
+  }
+}
