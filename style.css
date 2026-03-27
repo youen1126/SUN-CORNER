@@ -153,8 +153,8 @@ body {
   color: #fff;
 }
 
-.event .btn {
-  margin: 10px 0 0;
+.event .btn.i:hover {
+  color: #fcc500;
 }
 
 a[href*="volunteer"]:hover {
@@ -233,10 +233,19 @@ a[href*="volunteer"]:hover {
   padding-top: 16px;
 }
 .hotspot-card .col .con .btns {
-  color: #3f5d45;
   font-size: 18px;
   text-align: right;
   margin-top: auto;
+}
+.hotspot-card .col .con .btns i {
+  color: #3f5d45;
+}
+.hotspot-card .col .con .btns i:hover {
+  color: #fcc500;
+}
+.hotspot-card .col .con .btns i:active {
+  color: #000;
+  transform: scale(0.98);
 }
 
 .hotspot-card .col .con h3 {
