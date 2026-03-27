@@ -108,7 +108,7 @@ body {
 
 .btn:hover,
 .nav ul li:hover {
-  background: #11dbff;
+  background: #5a8a64;
   cursor: pointer;
 }
 
@@ -133,6 +133,10 @@ body {
   min-height: 400px;
   display: flex;
   align-items: center;
+  transition: transform 0.3s ease;
+}
+.event:hover {
+  transform: scale(1.02);
 }
 
 .event .container {
@@ -164,6 +168,8 @@ a[href*="volunteer"]:hover {
 }
 
 .hotspot-card .hotspot-title {
+  color: #2c4631;
+  font-size: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -185,6 +191,18 @@ a[href*="volunteer"]:hover {
   flex-direction: column;
   flex: 1 1 300px;
   background-color: #fff;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.hotspot-card .col:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+.hotspot-card .col:active {
+  transform: translateY(-2px) scale(0.98);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .hotspot-card .col .photo {
@@ -200,7 +218,12 @@ a[href*="volunteer"]:hover {
   height: 100%;
   object-fit: cover;
   display: block;
+  transition: transform 0.3s ease;
 }
+.hotspot-card .col:hover .photo img {
+  transform: scale(1.05);
+}
+
 .hotspot-card .col .con {
   background-color: #fff;
   display: flex;
@@ -220,7 +243,13 @@ a[href*="volunteer"]:hover {
   color: #3f5d45;
   padding-bottom: 10px;
   margin: 0;
+  transition: color 0.3s ease;
 }
+
+.hotspot-card .col:hover .con h3 {
+  color: #fcc500;
+}
+
 .hotspot-card .col .con p {
   color: #29392c;
   font-size: 14px;
