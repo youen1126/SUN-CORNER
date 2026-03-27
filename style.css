@@ -183,13 +183,8 @@ a[href*="volunteer"]:hover {
     font-size: 50px;
   }
 
-  .main,
-  .event {
+  .main {
     padding: 0 30px;
-  }
-
-  .main img {
-    width: 100%;
   }
 }
 
