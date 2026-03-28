@@ -1,27 +1,3 @@
-html,
-body {
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  font-family: "Manrope", sans-serif;
-  font-weight: 400;
-  color: #121212;
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-.container {
-  margin: 0 auto;
-  max-width: 940px;
-  padding: 0 10px;
-}
-
 .header {
   position: relative;
   background: none;
@@ -96,37 +72,56 @@ body {
 
 .nav {
   background: #000;
-  min-height: 70px;
   width: 100%;
+  padding: 18px 24px;
 }
 
-.nav ul {
-  min-height: 75px;
-  list-style: none;
+.site-nav {
+  max-width: 1120px;
+  width: 100%;
   margin: 0 auto;
-  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
 }
 
-.nav ul li {
+.site-nav__brand {
   color: #fff;
-  display: inline-block;
-  min-height: 70px;
-  line-height: 80px;
-  padding: 0 10px;
+  font-family: "Noto Serif TC", serif;
+  font-size: 1.2rem;
+  letter-spacing: 0.08em;
+}
+
+.site-nav__links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 18px;
   font-size: 0.95rem;
+}
+
+.site-nav__links a {
+  color: #fff;
+  padding: 8px 0;
+  border-bottom: 2px solid transparent;
   font-weight: 500;
   letter-spacing: 0.04em;
-  transition: background 0.5s;
-}
-
-.nav ul li a {
-  color: inherit;
-  text-decoration: none;
-  display: block;
+  transition:
+    border-color 0.25s ease,
+    color 0.25s ease,
+    opacity 0.25s ease;
 }
 
 .btn:hover,
-.nav ul li:hover {
+.site-nav__links a:hover,
+.site-nav__links a[aria-current="page"] {
+  color: #3f5d45;
+  border-color: #3f5d45;
+  opacity: 1;
+}
+
+.btn:hover {
   background: #5a8a64;
   cursor: pointer;
 }
@@ -305,17 +300,6 @@ a[href*="volunteer"]:hover {
   margin: 0;
 }
 
-.footer {
-  background: #fcc500;
-  padding: 40px 0;
-}
-
-.footer p {
-  color: #000;
-  font-size: 14px;
-  margin: 0;
-}
-
 /* Chrome / Edge / Safari */
 ::-webkit-scrollbar {
   width: 15px;
@@ -343,6 +327,19 @@ html {
 }
 
 @media (max-width: 575px) {
+  .nav {
+    padding: 16px 24px;
+  }
+
+  .site-nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .site-nav__links {
+    justify-content: flex-start;
+  }
+
   .header h1 {
     font-size: 80px;
     line-height: 64px;
