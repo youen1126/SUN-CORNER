@@ -23,8 +23,10 @@
     <link href="scrollbar.css" rel="stylesheet" />
     <link href="style.css" rel="stylesheet" />
     <script src="backToTop.js" defer></script>
+    <script src="navMenu.js" defer></script>
+    <script src="navbarLoader.js" defer></script>
   </head>
-  <body id="top">
+  <body id="top" data-page="home">
     <!-- Hero -->
     <header class="header">
       <div class="container">
@@ -35,16 +37,7 @@
       </div>
     </header>
     <!-- navbar -->
-    <nav class="nav">
-      <div class="site-nav">
-        <a class="site-nav__brand" href="index.html">日角工作室</a>
-        <div class="site-nav__links">
-          <a href="#hotspot">選物</a>
-          <a href="#inspiration">工作室日常</a>
-          <a href="about.html">關於</a>
-        </div>
-      </div>
-    </nav>
+    <div class="nav" data-navbar-root></div>
     <!-- section1 -->
     <main>
       <section id="inspiration" class="inspirat">

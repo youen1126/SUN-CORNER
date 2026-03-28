@@ -18,17 +18,12 @@
     <link rel="stylesheet" href="scrollbar.css" />
     <link rel="stylesheet" href="about.css" />
     <script src="backToTop.js" defer></script>
+    <script src="navMenu.js" defer></script>
+    <script src="navbarLoader.js" defer></script>
   </head>
-  <body id="top">
+  <body id="top" data-page="about">
     <header class="hero">
-      <nav class="site-nav">
-        <a class="site-nav__brand" href="index.html">日角工作室</a>
-        <div class="site-nav__links">
-          <a href="index.html#inspiration">選物</a>
-          <a href="index.html#studio-life">工作室日常</a>
-          <a href="about.html" aria-current="page">關於</a>
-        </div>
-      </nav>
+      <div data-navbar-root></div>
 
       <div class="hero__content">
         <p class="eyebrow">About Sun Corner</p>
