@@ -22,9 +22,6 @@ body {
 body {
   font-family: "Manrope", sans-serif;
   color: var(--ink);
-  background:
-    radial-gradient(circle at top left, rgba(252, 197, 0, 0.35), transparent 24%),
-    linear-gradient(180deg, #fff3be 0%, #f7e7c2 28%, #fff9ef 100%);
   line-height: 1.8;
 }
 
@@ -35,9 +32,16 @@ a {
 
 .hero,
 .story-block,
-.site-footer {
+.site-footer,
+.footer {
   padding-left: 24px;
   padding-right: 24px;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 940px;
+  padding: 0 10px;
 }
 
 .hero {
@@ -47,11 +51,8 @@ a {
   justify-content: space-between;
   padding-top: 28px;
   padding-bottom: 72px;
-  background:
-    linear-gradient(rgba(18, 18, 18, 0.35), rgba(18, 18, 18, 0.5)),
-    linear-gradient(135deg, rgba(252, 197, 0, 0.45), rgba(232, 137, 47, 0.35)),
-    url("https://images.unsplash.com/photo-1516383740770-fbcc5ccbece0?auto=format&fit=crop&w=1400&q=80")
-      center / cover;
+  background: url("https://i.pinimg.com/avif/736x/6c/44/7b/6c447b9a23d41ad598d698fc86e72aca.avf")
+    center / cover;
   color: var(--cream);
   position: relative;
   overflow: hidden;
@@ -61,9 +62,9 @@ a {
   content: "";
   position: absolute;
   inset: auto -8% -80px auto;
-  width: 320px;
-  height: 320px;
-  background: radial-gradient(circle, rgba(252, 197, 0, 0.9) 0%, rgba(252, 197, 0, 0) 72%);
+  width: 520px;
+  height: 520px;
+  background: radial-gradient(circle, #fcc500 0%, rgba(252, 197, 0, 0) 72%);
   opacity: 0.75;
   pointer-events: none;
 }
@@ -180,7 +181,11 @@ main {
 }
 
 .story-block--vision {
-  background: linear-gradient(135deg, rgba(252, 197, 0, 0.18), rgba(255, 249, 239, 0.95));
+  background: linear-gradient(
+    135deg,
+    rgba(252, 197, 0, 0.18),
+    rgba(255, 249, 239, 0.95)
+  );
 }
 
 .story-block--vision::before {
@@ -188,7 +193,11 @@ main {
 }
 
 .story-block--origin {
-  background: linear-gradient(135deg, rgba(232, 137, 47, 0.18), rgba(255, 249, 239, 0.96));
+  background: linear-gradient(
+    135deg,
+    rgba(232, 137, 47, 0.18),
+    rgba(255, 249, 239, 0.96)
+  );
 }
 
 .story-block--origin::before {
@@ -196,7 +205,11 @@ main {
 }
 
 .story-block--identity {
-  background: linear-gradient(135deg, rgba(90, 138, 100, 0.16), rgba(255, 249, 239, 0.96));
+  background: linear-gradient(
+    135deg,
+    rgba(90, 138, 100, 0.16),
+    rgba(255, 249, 239, 0.96)
+  );
 }
 
 .story-block--identity::before {
@@ -213,6 +226,73 @@ main {
   margin: 0;
   font-size: clamp(2rem, 4vw, 3rem);
   color: var(--ink);
+}
+
+.vision-magazine {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(320px, 0.9fr);
+  gap: 32px;
+  align-items: stretch;
+  position: relative;
+  z-index: 1;
+}
+
+.vision-magazine__content {
+  display: grid;
+  gap: 20px;
+  align-content: start;
+}
+
+.vision-magazine__heading {
+  margin-bottom: 0;
+}
+
+.vision-magazine__kicker {
+  margin: 0;
+  padding-top: 8px;
+  border-top: 2px solid rgba(18, 18, 18, 0.12);
+  color: rgba(18, 18, 18, 0.72);
+  font-size: 0.88rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.vision-magazine__lead {
+  margin: 0;
+  font-family: "Noto Serif TC", serif;
+  font-size: 1.65rem;
+  line-height: 1.6;
+}
+
+.vision-magazine__body {
+  margin: 0;
+}
+
+.vision-magazine__body--one {
+  margin-top: 4px;
+}
+
+.vision-magazine__body--two {
+  margin-top: 0;
+}
+
+.vision-magazine__image {
+  margin: 0;
+  overflow: hidden;
+  border-radius: 20px;
+  box-shadow: 0 14px 30px rgba(18, 18, 18, 0.1);
+  min-height: 100%;
+}
+
+.vision-magazine__image img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.vision-magazine__image--main {
+  min-height: 520px;
 }
 
 .story-grid {
@@ -273,12 +353,16 @@ main {
   color: var(--ink);
 }
 
-.site-footer {
-  padding-top: 24px;
-  padding-bottom: 36px;
-  text-align: center;
-  color: rgba(18, 18, 18, 0.78);
-  font-size: 0.9rem;
+.footer {
+  background: var(--sun-yellow);
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.footer p {
+  color: #000;
+  font-size: 14px;
+  margin: 0;
 }
 
 @media (max-width: 780px) {
@@ -293,7 +377,8 @@ main {
   }
 
   .story-grid,
-  .feature-cards {
+  .feature-cards,
+  .vision-magazine {
     grid-template-columns: 1fr;
   }
 
@@ -312,5 +397,21 @@ main {
   .story-block {
     padding-top: 36px;
     padding-bottom: 36px;
+  }
+
+  .vision-magazine__heading,
+  .vision-magazine__kicker,
+  .vision-magazine__lead,
+  .vision-magazine__body--one,
+  .vision-magazine__body--two {
+    grid-column: auto;
+  }
+
+  .vision-magazine__lead {
+    font-size: 1.3rem;
+  }
+
+  .vision-magazine__image--main {
+    min-height: 220px;
   }
 }
