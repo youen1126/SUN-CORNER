@@ -1,45 +1,57 @@
 # 日角工作室 Sun Corner
 
-這是一個以「日角工作室」為主題製作的靜態網站練習專案，主要用來練習 HTML 與 CSS 的基礎結構、版面配置與樣式設計。
+以「日角工作室」為題的前端切版練習專案，主軸是品牌形象網站的雙頁面呈現（首頁 + About）。
 
-## 專案目的
+## 專案內容
 
-這個專案不是正式商業網站，而是我在學習前端初期，拿來複習基礎語法與切版觀念的練習作品。
-
-透過這個專案，我主要複習、練習：
-
-- HTML 基本結構建立
-- CSS 選擇器與樣式設定
-- 區塊排版與容器概念
-- 背景圖片設定
-- 按鈕、導覽列、Footer 樣式設計
-- RWD 基礎 media query 練習
+- `index.html`：首頁，包含 Hero、主打選物、工作室日常與招募區塊
+- `about.html`：品牌願景、起源與特色介紹頁
+- 固定式導覽列（Navbar）
+- 手機版漢堡選單
+- 回到頂端按鈕
+- 客製化捲軸樣式
 
 ## 使用技術
 
 - HTML5
 - CSS3
+- Vanilla JavaScript（互動邏輯）
 
-## 練習重點
+## 檔案結構
 
-此專案主要聚焦在以下基礎內容：
+```text
+sunCorner/
+├── index.html
+├── about.html
+├── navbar.html          # 共用 navbar partial
+├── navbarLoader.js      # 將 navbar 載入到各頁掛載點
+├── navMenu.js           # 漢堡選單開合邏輯
+├── backToTop.js         # 回到頂端按鈕邏輯
+├── base.css             # 共用基礎樣式
+├── style.css            # 首頁樣式
+├── about.css            # About 頁樣式
+├── scrollbar.css        # 共用自訂捲軸樣式
+└── README.md
+```
 
-- Header / Hero 區塊設計
-- Navbar 導覽列排版
-- 圖文內容 section 製作
-- 活動招募區塊設計
-- Footer 頁尾設計
-- 基本響應式設計調整
+## 開發重點
 
-## 專案說明
+- 基礎語意化 HTML 結構
+- CSS 區塊排版與視覺層次建立
+- RWD 響應式調整（桌機 / 手機）
+- 共用元件抽離（Navbar、Scrollbar）
+- 基本無障礙屬性（例如 `aria-expanded`、`aria-current`）
 
-本專案以品牌形象網站的形式呈現，內容包含首頁主視覺、靈感企劃介紹、活動志工招募區塊與頁尾資訊。  
-整體視覺風格以明亮、創意、工作室感為主要方向。
+## 後期新增 About 頁面與 Codex 協作紀錄
 
-## 備註
+在專案後期新增 `about.html` 時，使用 Codex 協助完成以下工作：
 
-這個專案的重點在於練習 HTML 與 CSS 基礎，因此目前沒有串接後端，也沒有使用 JavaScript 框架或進階功能。
+- 新增 About 頁面與對應樣式檔 `about.css`
+- 導覽列手機版改為漢堡選單（含開闔動畫與鍵盤 Esc 關閉）
+- 將捲軸樣式從 `style.css` 抽離為 `scrollbar.css`，並套用到兩頁
+- 將 Navbar 抽成獨立 `navbar.html`，透過 `navbarLoader.js` 載入到兩頁
+- 修正 About 頁手機版 navbar 會遮住 `eyebrow` 文字的間距問題
 
 ## 作者
 
--  UN
+- UN
