@@ -5,8 +5,9 @@ body {
 }
 
 body {
-  font-family: "Roboto", sans-serif;
-  font-weight: 300;
+  font-family: "Manrope", sans-serif;
+  font-weight: 400;
+  color: #121212;
 }
 
 *,
@@ -65,13 +66,22 @@ body {
   margin-top: 0;
 }
 
-.article-title {
-  font-family: cursive;
+.article-title,
+.header h1,
+.inspirat h2,
+.inspirat h3,
+.event h2,
+.hotspot-card .hotspot-title h1,
+.hotspot-card .col .con h3 {
+  font-family: "Noto Serif TC", serif;
 }
 
 .en-title {
   color: #fff;
+  font-family: "Manrope", sans-serif;
   font-size: 70px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
   padding-bottom: 20px;
   text-transform: uppercase;
 }
@@ -103,6 +113,9 @@ body {
   min-height: 70px;
   line-height: 80px;
   padding: 0 10px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  letter-spacing: 0.04em;
   transition: background 0.5s;
 }
 
@@ -129,6 +142,26 @@ body {
 .inspirat img {
   height: 200px;
   display: block;
+}
+
+.inspirat h2,
+.event h2,
+.hotspot-card .hotspot-title h1 {
+  font-size: clamp(2rem, 4vw, 3rem);
+  line-height: 1.2;
+}
+
+.inspirat h3,
+.hotspot-card .col .con h3 {
+  font-size: 1.6rem;
+  line-height: 1.35;
+}
+
+.inspirat p,
+.event p,
+.hotspot-card .col .con p,
+.footer p {
+  font-family: "Manrope", sans-serif;
 }
 
 .event {
