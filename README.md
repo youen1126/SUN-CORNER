@@ -15,7 +15,7 @@
 
 - HTML5
 - CSS3
-- Vanilla JavaScript（互動邏輯）
+- 簡單的JavaScript（互動邏輯）
 
 ## 檔案結構
 
@@ -37,10 +37,9 @@ sunCorner/
 ## 開發重點
 
 - 基礎語意化 HTML 結構
-- CSS 區塊排版與視覺層次建立
-- RWD 響應式調整（桌機 / 手機）
-- 共用元件抽離（Navbar、Scrollbar）
-- 基本無障礙屬性（例如 `aria-expanded`、`aria-current`）
+- CSS 區塊排版、視覺層次建立
+- RWD 響應式調整
+- 共用元件抽離
 
 ## 後期新增 About 頁面與 Codex 協作紀錄
 
